@@ -33,7 +33,8 @@
   }
 
   var THEMES = {
-    everywhere: { subject: "🎓", colorFn: capColors,    scale: 0.30, maxPx: 150, gap: 4, dot: 1.8, ax: 0.90, ay: 0.74 },
+    everywhere: { subject: "🎓", colorFn: capColors,    scale: 0.30, maxPx: 150, gap: 4, dot: 1.8, ax: 0.90, ay: 0.74,
+                  mobile: { maxPx: 60, gap: 3, dot: 1.5, ax: 0.97, ay: 0.60 } },
     sidekick:   { subject: "🚀", colorFn: rocketColors, scale: 0.30, maxPx: 140, gap: 4, dot: 1.8, ax: 0.88, ay: 0.16 },
     online:     { subject: "♥",  grad: ["#ffd56b", "#ff8fb0"], scale: 0.30, maxPx: 132, gap: 4, dot: 1.8, ax: 0.86, ay: 0.40,
                   mobile: { maxPx: 84, gap: 3, ax: 0.88, ay: 0.28 } }
