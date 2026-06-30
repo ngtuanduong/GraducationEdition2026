@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nguyễn Tuấn Dương — Graduation Edition 2026</title>
+        <meta
+            name="description"
+            content="You're invited! Celebrate the graduation of Nguyễn Tuấn Dương — B.A. in Information Technology, Software Engineering, Hanoi University. Monday, 6 July 2026 · 14:30 · Nhà Trắng (A1), HANU."
+        />
+
+        <!-- Open Graph (nice preview when shared on Zalo / Messenger / Facebook) -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="The Graduation of Nguyễn Tuấn Dương — You're invited"
+        />
+        <meta
+            property="og:description"
+            content="Mon, 6 July 2026 · 14:30 · Nhà Trắng (A1), Hanoi University. A four-year journey in Software Engineering, celebrated in one big day."
+        />
+        <meta name="theme-color" content="#FAF9F6" />
+
+        <!-- Emoji favicon -->
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <!-- ░░ NAV ░░ -->
+        <header class="nav" id="nav">
+            <div class="nav__inner container">
+                <a href="#top" class="nav__brand">
+                    <span class="nav__cap">🎓</span>
+                    <span class="nav__mark"
+                        >GRADUATION<span class="accent">’26</span></span
+                    >
+                </a>
+                <nav class="nav__links" id="navLinks">
+                    <a href="#invitation">The Invitation</a>
+                    <a href="#journey">The Journey</a>
+                    <a href="#curriculum">Curriculum</a>
+                    <a href="#details">Details</a>
+                    <a href="#rsvp" class="nav__cta">RSVP</a>
+                </nav>
+                <button
+                    class="nav__toggle"
+                    id="navToggle"
+                    aria-label="Menu"
+                    aria-expanded="false"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <main id="top">
+            <!-- ░░ HERO ░░ -->
+            <section class="hero emblem-host" data-theme="everywhere">
+                <canvas class="bg-particles" aria-hidden="true"></canvas>
+                <div class="container hero__inner">
+                    <p class="eyebrow reveal">
+                        <span class="eyebrow__dot"></span> Graduation Edition
+                        <span class="eyebrow__sep">/</span> July 2026
+                    </p>
+
+                    <h1 class="hero__title reveal">
+                        You’re invited<br />
+                        to celebrate the<br />
+                        graduation of<br />
+                        <span class="hero__name">Nguyễn Tuấn Dương.</span>
+                    </h1>
+
+                    <p class="hero__sub reveal">
+                        Bachelor of Information Technology —
+                        <strong>Software Engineering</strong><br />
+                        Hanoi University · Class of 2026
+                    </p>
+
+                    <!-- Countdown -->
+                    <div
+                        class="countdown reveal"
+                        id="countdown"
+                        aria-label="Countdown to the ceremony"
+                    >
+                        <div class="countdown__unit">
+                            <span class="countdown__num" data-cd="days">00</span
+                            ><span class="countdown__label">Days</span>
+                        </div>
+                        <div class="countdown__unit">
+                            <span class="countdown__num" data-cd="hours"
+                                >00</span
+                            ><span class="countdown__label">Hours</span>
+                        </div>
+                        <div class="countdown__unit">
+                            <span class="countdown__num" data-cd="mins">00</span
+                            ><span class="countdown__label">Minutes</span>
+                        </div>
+                        <div class="countdown__unit">
+                            <span class="countdown__num" data-cd="secs">00</span
+                            ><span class="countdown__label">Seconds</span>
+                        </div>
+                    </div>
+
+                    <div class="hero__cta reveal">
+                        <a href="#rsvp" class="btn btn--primary">RSVP now</a>
+                        <button class="btn btn--ghost" data-add-calendar>
+                            ＋ Add to calendar
+                        </button>
+                    </div>
+
+                    <div class="hero__stats reveal" id="heroStats">
+                        <div class="stat">
+                            <span class="stat__num" data-count="4">0</span
+                            ><span class="stat__label">Years</span>
+                        </div>
+                        <div class="stat__div"></div>
+                        <div class="stat">
+                            <span class="stat__num" data-count="147">0</span
+                            ><span class="stat__label">Credits earned</span>
+                        </div>
+                        <div class="stat__div"></div>
+                        <div class="stat">
+                            <span class="stat__num" data-count="1">0</span
+                            ><span class="stat__label">Big day</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ MARQUEE ░░ -->
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee__track" id="marqueeTrack">
+                    <span class="marquee__item"
+                        >Class of 2026 ✦ Software Engineering ✦ Hanoi University
+                        ✦ 14:30 — 06 July ✦ Nhà Trắng (A1) ✦&nbsp;</span
+                    >
+                </div>
+            </div>
+
+            <!-- ░░ THE INVITATION ░░ -->
+            <section class="section" id="invitation">
+                <div class="container">
+                    <div class="section__head reveal">
+                        <p class="eyebrow">
+                            <span class="eyebrow__dot"></span> The Invitation
+                        </p>
+                        <h2 class="section__title">
+                            Four years in the making.
+                        </h2>
+                        <p class="section__lead">
+                            With immense gratitude and joy, I —
+                            <strong>Nguyễn Tuấn Dương</strong> — warmly invite
+                            you to share in the celebration of my university
+                            graduation: the culmination of a four-year journey
+                            at Hanoi University.
+                        </p>
+                    </div>
+
+                    <!-- Ticket card -->
+                    <div class="ticket reveal">
+                        <div class="ticket__main">
+                            <p class="ticket__kicker">
+                                Admit one — and your warmest wishes
+                            </p>
+                            <h3 class="ticket__title">Graduation Ceremony</h3>
+                            <div class="ticket__rows">
+                                <div class="ticket__row">
+                                    <span class="ticket__k">Who</span>
+                                    <span class="ticket__v"
+                                        >Nguyễn Tuấn Dương<small
+                                            >B.A. in IT — Software
+                                            Engineering</small
+                                        ></span
+                                    >
+                                </div>
+                                <div class="ticket__row">
+                                    <span class="ticket__k">When</span>
+                                    <span class="ticket__v"
+                                        >Monday, 6 July 2026<small
+                                            >14:30 (2:30 PM) · arrive by
+                                            14:00</small
+                                        ></span
+                                    >
+                                </div>
+                                <div class="ticket__row">
+                                    <span class="ticket__k">Where</span>
+                                    <span class="ticket__v"
+                                        >Nhà Trắng — Building A1<small
+                                            >Hanoi University · Km9 Nguyễn Trãi,
+                                            Hà Nội</small
+                                        ></span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket__stub">
+                            <span class="ticket__stub-label">Admit</span>
+                            <span class="ticket__stub-no">01</span>
+                            <span class="ticket__cap">🎓</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ THE JOURNEY ░░ -->
+            <section
+                class="section section--alt emblem-host"
+                id="journey"
+                data-theme="sidekick"
+            >
+                <canvas class="bg-particles" aria-hidden="true"></canvas>
+                <div class="container">
+                    <div class="section__head reveal">
+                        <p class="eyebrow">
+                            <span class="eyebrow__dot"></span> The Journey
+                        </p>
+                        <h2 class="section__title">
+                            From first words to final build.
+                        </h2>
+                        <p class="section__lead">
+                            An English-taught degree, four years, one continuous
+                            climb.
+                        </p>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="tl reveal">
+                            <div class="tl__year">Year<span>01</span></div>
+                            <div class="tl__body">
+                                <h3>Foundation — finding the language</h3>
+                                <p>
+                                    A full year of
+                                    <strong
+                                        >English for Specific Purposes
+                                        (ESPD)</strong
+                                    >, building academic fluency from B1 to B2 —
+                                    the language that powers an entire degree
+                                    taught in English.
+                                </p>
+                                <div class="chips">
+                                    <span class="chip"
+                                        >English for Specific Purposes</span
+                                    >
+                                    <span class="chip">Academic English</span>
+                                    <span class="chip">B1 → B2</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="tl reveal">
+                            <div class="tl__year">Year<span>02</span></div>
+                            <div class="tl__body">
+                                <h3>Core foundations — how machines think</h3>
+                                <p>
+                                    The fundamentals of computing: writing first
+                                    programs, the mathematics behind them, and
+                                    the principles of the machine.
+                                </p>
+                                <div class="chips">
+                                    <span class="chip"
+                                        >Programming 1 &amp; 2</span
+                                    >
+                                    <span class="chip"
+                                        >Discrete Mathematics</span
+                                    >
+                                    <span class="chip"
+                                        >Computer Principles</span
+                                    >
+                                    <span class="chip"
+                                        >Probability &amp; Statistics</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="tl reveal">
+                            <div class="tl__year">Year<span>03</span></div>
+                            <div class="tl__body">
+                                <h3>Going deeper — systems &amp; data</h3>
+                                <p>
+                                    Data structures, databases, networks and
+                                    operating systems — the craft of building
+                                    software that scales.
+                                </p>
+                                <div class="chips">
+                                    <span class="chip"
+                                        >Data Structures &amp; Algorithms</span
+                                    >
+                                    <span class="chip">Databases</span>
+                                    <span class="chip">Operating Systems</span>
+                                    <span class="chip">Computer Networks</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="tl reveal">
+                            <div class="tl__year">Year<span>04</span></div>
+                            <div class="tl__body">
+                                <h3>Specialization &amp; launch</h3>
+                                <p>
+                                    Specializing in
+                                    <strong>Software Engineering</strong> — then
+                                    an internship and a graduation thesis to tie
+                                    four years together.
+                                </p>
+                                <div class="chips">
+                                    <span class="chip"
+                                        >Software Engineering 1 &amp; 2</span
+                                    >
+                                    <span class="chip">Web Programming</span>
+                                    <span class="chip">Quality Assurance</span>
+                                    <span class="chip">Project Management</span>
+                                    <span class="chip">Internship</span>
+                                    <span class="chip">Thesis</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ CURRICULUM — THE STACK ░░ -->
+            <section class="section" id="curriculum">
+                <div class="container">
+                    <div class="section__head reveal">
+                        <p class="eyebrow">
+                            <span class="eyebrow__dot"></span> Curriculum / The
+                            Stack
+                        </p>
+                        <h2 class="section__title">
+                            147 credits, four building blocks.
+                        </h2>
+                        <p class="section__lead">
+                            The full program, the way it was actually built. Tap
+                            a block to expand the courses.
+                        </p>
+                    </div>
+
+                    <div class="stack">
+                        <!-- 1 -->
+                        <article class="block reveal" data-block>
+                            <button class="block__head" aria-expanded="false">
+                                <span class="block__no">01</span>
+                                <span class="block__title"
+                                    >General Education</span
+                                >
+                                <span class="block__credits"><b>60</b> cr</span>
+                                <span class="block__chevron" aria-hidden="true"
+                                    >↓</span
+                                >
+                            </button>
+                            <div class="block__body">
+                                <div class="chips chips--dense">
+                                    <span class="chip"
+                                        >Marxist–Leninist Philosophy · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Marxist–Leninist Political Economy ·
+                                        2</span
+                                    >
+                                    <span class="chip"
+                                        >Scientific Socialism · 2</span
+                                    >
+                                    <span class="chip"
+                                        >Ho Chi Minh Ideology · 2</span
+                                    >
+                                    <span class="chip"
+                                        >History of the CPV · 2</span
+                                    >
+                                    <span class="chip">General Law · 2</span>
+                                    <span class="chip"
+                                        >Physical Education · 3</span
+                                    >
+                                    <span class="chip"
+                                        >National Defense &amp; Security ·
+                                        8</span
+                                    >
+                                    <span class="chip chip--hl"
+                                        >English Practice B1→B2 · 36</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 2 -->
+                        <article class="block reveal" data-block>
+                            <button class="block__head" aria-expanded="false">
+                                <span class="block__no">02</span>
+                                <span class="block__title"
+                                    >Core IT Foundations</span
+                                >
+                                <span class="block__credits"><b>50</b> cr</span>
+                                <span class="block__chevron" aria-hidden="true"
+                                    >↓</span
+                                >
+                            </button>
+                            <div class="block__body">
+                                <p class="block__sub">Required · 44 credits</p>
+                                <div class="chips chips--dense">
+                                    <span class="chip"
+                                        >Advanced Mathematics · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Discrete Mathematics · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Probability &amp; Statistics · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Scientific Research Skills · 2</span
+                                    >
+                                    <span class="chip"
+                                        >Computer Principles · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Professional Ethics in IT · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Programming 1 &amp; 2 · 6</span
+                                    >
+                                    <span class="chip"
+                                        >Operating System Principles · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Data Structures &amp; Algorithms ·
+                                        3</span
+                                    >
+                                    <span class="chip"
+                                        >Computer Networks · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Enterprise Information Systems ·
+                                        3</span
+                                    >
+                                    <span class="chip">Databases · 3</span>
+                                    <span class="chip"
+                                        >Special Topics 1 &amp; 2 · 6</span
+                                    >
+                                </div>
+                                <p class="block__sub">
+                                    Electives · choose 6 of 12
+                                </p>
+                                <div class="chips chips--dense">
+                                    <span class="chip chip--soft"
+                                        >Artificial Intelligence · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Embedded Systems · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Computer Graphics · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Intro to Information Security · 3</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 3 - highlighted -->
+                        <article class="block block--feature reveal" data-block>
+                            <button class="block__head" aria-expanded="true">
+                                <span class="block__no">03</span>
+                                <span class="block__title"
+                                    >Software Engineering Major
+                                    <em>— my path</em></span
+                                >
+                                <span class="block__credits"><b>27</b> cr</span>
+                                <span class="block__chevron" aria-hidden="true"
+                                    >↓</span
+                                >
+                            </button>
+                            <div class="block__body">
+                                <p class="block__sub">Required · 15 credits</p>
+                                <div class="chips chips--dense">
+                                    <span class="chip"
+                                        >Software Engineering 1 &amp; 2 ·
+                                        6</span
+                                    >
+                                    <span class="chip"
+                                        >Software Quality Assurance · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Web Programming · 3</span
+                                    >
+                                    <span class="chip"
+                                        >Software Project Management · 3</span
+                                    >
+                                </div>
+                                <p class="block__sub">
+                                    Electives · choose 12 of 24
+                                </p>
+                                <div class="chips chips--dense">
+                                    <span class="chip chip--soft"
+                                        >Mobile Programming · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >System Analysis &amp; Design · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Network Programming · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Big Data Mining · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Human–Computer Interaction · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Internet of Services / Web · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Java Software Development · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Software Requirements Analysis ·
+                                        3</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 4 -->
+                        <article class="block reveal" data-block>
+                            <button class="block__head" aria-expanded="false">
+                                <span class="block__no">04</span>
+                                <span class="block__title"
+                                    >Internship &amp; Graduation Thesis</span
+                                >
+                                <span class="block__credits"><b>10</b> cr</span>
+                                <span class="block__chevron" aria-hidden="true"
+                                    >↓</span
+                                >
+                            </button>
+                            <div class="block__body">
+                                <div class="chips chips--dense">
+                                    <span class="chip">Internship · 4</span>
+                                    <span class="chip chip--hl"
+                                        >Graduation Thesis (or replacement) ·
+                                        6</span
+                                    >
+                                </div>
+                                <p class="block__sub">
+                                    Thesis replacement options
+                                </p>
+                                <div class="chips chips--dense">
+                                    <span class="chip chip--soft"
+                                        >Project Management · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Pattern Recognition · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Machine Learning &amp; Applications ·
+                                        3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Emerging Topics in IT · 3</span
+                                    >
+                                    <span class="chip chip--soft"
+                                        >Entrepreneurship · 3</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="stack__total reveal">
+                        <span>Total</span>
+                        <strong><span data-count="147">0</span> credits</strong>
+                        <span>over 4 years</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ DETAILS ░░ -->
+            <section class="section section--alt" id="details">
+                <div class="container">
+                    <div class="section__head reveal">
+                        <p class="eyebrow">
+                            <span class="eyebrow__dot"></span> Details
+                        </p>
+                        <h2 class="section__title">
+                            Everything you need to know.
+                        </h2>
+                    </div>
+
+                    <div class="details">
+                        <div class="details__info">
+                            <div class="info reveal">
+                                <span class="info__k">Date</span>
+                                <span class="info__v">Monday, 6 July 2026</span>
+                            </div>
+                            <div class="info reveal">
+                                <span class="info__k">Time</span>
+                                <span class="info__v"
+                                    >14:30 (2:30 PM)<small
+                                        >Please arrive by 14:00</small
+                                    ></span
+                                >
+                            </div>
+                            <div class="info reveal">
+                                <span class="info__k">Venue</span>
+                                <span class="info__v"
+                                    >Nhà Trắng — Building A1<small
+                                        >Hanoi University · Km9 Nguyễn Trãi,
+                                        Thanh Xuân, Hà Nội</small
+                                    ></span
+                                >
+                            </div>
+                            <div class="info reveal">
+                                <span class="info__k">Dress code</span>
+                                <span class="info__v"
+                                    >Smart / formal<small
+                                        >…and your brightest smile</small
+                                    ></span
+                                >
+                            </div>
+                            <div class="reveal details__actions">
+                                <button
+                                    class="btn btn--primary"
+                                    data-add-calendar
+                                >
+                                    ＋ Add to calendar
+                                </button>
+                                <a
+                                    class="btn btn--ghost"
+                                    id="gcalLink"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Google Calendar</a
+                                >
+                            </div>
+                        </div>
+                        <div class="details__map reveal">
+                            <iframe
+                                title="Map to Hanoi University"
+                                src="https://www.google.com/maps?q=Hanoi%20University%2C%20Km9%20Nguyen%20Trai%2C%20Thanh%20Xuan%2C%20Hanoi&output=embed"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ RSVP ░░ -->
+            <section class="section" id="rsvp">
+                <div class="container">
+                    <div class="rsvp">
+                        <div class="rsvp__intro reveal">
+                            <p class="eyebrow">
+                                <span class="eyebrow__dot"></span> RSVP
+                            </p>
+                            <h2 class="section__title">Will you be there?</h2>
+                            <p class="section__lead">
+                                It would mean the world to celebrate with you.
+                                Kindly let me know by
+                                <strong>4 July 2026</strong>.
+                            </p>
+                        </div>
+
+                        <form
+                            class="rsvp__form reveal"
+                            id="rsvpForm"
+                            novalidate
+                        >
+                            <div class="field">
+                                <label for="rName">Your name</label>
+                                <input
+                                    id="rName"
+                                    name="name"
+                                    type="text"
+                                    autocomplete="name"
+                                    placeholder="e.g. Minh Anh"
+                                    required
+                                />
+                            </div>
+
+                            <div class="field">
+                                <span class="field__label"
+                                    >Will you attend?</span
+                                >
+                                <div class="choice">
+                                    <label class="choice__opt"
+                                        ><input
+                                            type="radio"
+                                            name="attend"
+                                            value="Yes, I'll be there 🎉"
+                                            checked
+                                        />
+                                        <span>Yes, I’ll be there</span></label
+                                    >
+                                    <label class="choice__opt"
+                                        ><input
+                                            type="radio"
+                                            name="attend"
+                                            value="Sorry, I can't make it"
+                                        />
+                                        <span>Sorry, can’t make it</span></label
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="rGuests"
+                                    >Number of guests (incl. you)</label
+                                >
+                                <select id="rGuests" name="guests">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5+</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="rMsg"
+                                    >A message for Dương
+                                    <small>(optional)</small></label
+                                >
+                                <textarea
+                                    id="rMsg"
+                                    name="message"
+                                    rows="3"
+                                    placeholder="Congratulations! …"
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn--primary btn--block"
+                            >
+                                Send my RSVP →
+                            </button>
+                            <p class="rsvp__note" id="rsvpNote">
+                                Opens your email app with the message ready to
+                                send.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ░░ FOOTER ░░ -->
+        <footer class="footer emblem-host" data-theme="online">
+            <canvas class="bg-particles" aria-hidden="true"></canvas>
+            <div class="container footer__inner">
+                <p class="footer__big reveal">
+                    Thank you — to my family,<br />my friends, and Hanoi
+                    University.
+                </p>
+                <p class="footer__see reveal">See you on 6 July 2026. 🎓</p>
+                <div class="footer__meta">
+                    <span>Class of 2026 · Software Engineering · HANU</span>
+                    <span>Made with ♥ by Nguyễn Tuấn Dương</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/particles.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
